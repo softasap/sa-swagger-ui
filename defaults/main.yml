@@ -1,6 +1,8 @@
 ---
 # defaults file for sa-swagger-ui
 
+  role_dir: "{{role_path}}"
+
   option_install_nodejs: false
   
   swaggerui_version: 2.1.4
