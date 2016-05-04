@@ -6,12 +6,12 @@
       - swagger
 
   - name: SwaggerUI | Download distribution
-    get_url: url=https://github.com/swagger-api/swagger-ui/archive/v{{swaggerui_version}}.zip dest=/tmp/swagger.zip
+    get_url: url=https://github.com/swagger-api/swagger-ui/archive/v{{swaggerui_version}}.tar.gz dest=/tmp/swagger.tar.gz
     tags:
       - swagger
 
   - name: SwaggerUI | Unpack distribution
-    unarchive: src=/tmp/swagger.zip dest=/tmp copy=no
+    unarchive: src=/tmp/swagger.tar.gz dest=/tmp copy=no
     tags:
       - swagger
 
